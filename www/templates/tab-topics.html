@@ -1,0 +1,11 @@
+<ion-view view-title="Topics">
+  <ion-content>
+    <div class="list">
+    <a class="item item-avatar" ng-repeat="topic in topics" href="#/tab/topics/{{topic.id}}">
+      <img ng-src="{{topic.author.avatar_url}}">
+      <h2>{{topic.title}}</h2>
+      <p>作者：{{topic.author.loginname}}</p>
+    </a>
+    </div>
+  </ion-content>
+</ion-view>

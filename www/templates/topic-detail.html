@@ -1,0 +1,13 @@
+<ion-view view-title="{{topic.title}}">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-avatar">
+        <img ng-src="{{topic.author.avatar_url}}">
+        <h2>{{topic.author.loginname}}</h2>
+        <p>{{topic.createedDate}}</p>
+      </div>
+      <div class="item item-body" ng-bind-html="topic.content">
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
